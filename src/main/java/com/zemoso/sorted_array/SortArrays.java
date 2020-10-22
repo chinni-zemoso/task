@@ -18,8 +18,6 @@ public class SortArrays {
     }
 
     private static int[] getSortedArray(int[] a, int[] b) {
-        Arrays.sort(a);
-        Arrays.sort(b);
         int lenOfFirstArray = a.length;
         int lengthOfSecondArray = b.length;
         int[] resultantArray = new int[lenOfFirstArray + lengthOfSecondArray];
