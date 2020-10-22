@@ -12,7 +12,7 @@ public class FindMinSet {
 
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        System.out.println(getMinArraySize(array));
+        logger.info(String.valueOf(getMinArraySize(array)));
     }
 
     private static int getMinArraySize(int[] array) {
@@ -28,8 +28,8 @@ public class FindMinSet {
         //Get, Only Occurances from Map
         int[] occurances = new int[map.size()];
         int occuranceIndex = 0;
-        for (Map.Entry entry : map.entrySet()) {
-            occurances[occuranceIndex++] = (Integer) entry.getValue();
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            occurances[occuranceIndex++] = entry.getValue();
         }
         //Sort the array
         Arrays.sort(occurances);
